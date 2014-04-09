@@ -133,8 +133,8 @@ print(rgb_input_image.format, rgb_input_image.size, rgb_input_image.mode)
 
 # Determine dimensions
 input_x, input_y = rgb_input_image.size
-chunk_x, chunk_y = (options.chunk_size_x, options.chunk_size_y)
-letter_size_x, letter_size_y = (options.letter_x, options.letter_y)
+chunk_x, chunk_y = (int(options.chunk_size_x), int(options.chunk_size_y))
+letter_size_x, letter_size_y = (int(options.letter_x), int(options.letter_y))
 
 cells_x = (input_x - chunk_x) // chunk_x
 cells_y = (input_y - chunk_y) // chunk_y
